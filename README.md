@@ -1,82 +1,66 @@
-# My-website
-body {
-    font-family: Arial;
-    margin: 0;
-    background: #f4f4f4;
-    transition: 0.3s;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My May Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-header {
-    background: linear-gradient(to right, #667eea, #764ba2);
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+<header>
+    <h1>My Project Website</h1>
+    <p>By: Your Name</p>
+    <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+</header>
 
-nav {
-    background: #222;
-    text-align: center;
-    padding: 10px;
-}
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-nav a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-}
+<section id="about" class="fade">
+    <h2>About Me</h2>
+    <p>I am an ICT student. This is my upgraded May project website with animations and design.</p>
+</section>
 
-section {
-    padding: 20px;
-}
+<section id="projects" class="fade">
+    <h2>My Projects</h2>
 
-.card {
-    background: white;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
+    <div class="card">
+        <h3>Website Project</h3>
+        <p>This project shows my skills in HTML, CSS, and JavaScript.</p>
+    </div>
 
-.card:hover {
-    transform: scale(1.05);
-}
+    <div class="card">
+        <h3>Future Project</h3>
+        <p>More projects coming soon!</p>
+    </div>
 
-.gallery {
-    display: flex;
-    gap: 10px;
-}
+</section>
 
-.gallery img {
-    width: 100px;
-    border-radius: 10px;
-}
+<section id="gallery" class="fade">
+    <h2>Gallery</h2>
 
-button {
-    padding: 10px;
-    background: #667eea;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
+    <div class="gallery">
+        <img src="https://via.placeholder.com/200">
+        <img src="https://via.placeholder.com/200">
+        <img src="https://via.placeholder.com/200">
+    </div>
+</section>
 
-/* Animation */
-.fade {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: 1s;
-}
+<section id="contact" class="fade">
+    <h2>Contact</h2>
+    <p>Email: yourname@email.com</p>
+    <button onclick="showMessage()">Say Hello</button>
+</section>
 
-.fade.show {
-    opacity: 1;
-    transform: translateY(0);
-}
+<footer>
+    <p>© 2026 My Website</p>
+</footer>
 
-/* Dark Mode */
-.dark {
-    background: #121212;
-    color: white;
-}
-
-.dark .card {
-    background: #1e1e1e;
-}
+<script src="script.js"></script>
+</body>
+</html>
