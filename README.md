@@ -11,7 +11,7 @@
 
 <header>
     <h1>My Project Website</h1>
-    <p>By: Your Name</p>
+    <p>By: Aj casiñas</p>
     <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
 </header>
 
