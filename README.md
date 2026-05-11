@@ -30,7 +30,6 @@
 <section id="projects" class="fade">
     <h2>My Projects</h2>
 
-});
     <div class="card">
         <h3>Website Project</h3>
         <p>This project shows my skills in HTML, CSS, and JavaScript.</p>
